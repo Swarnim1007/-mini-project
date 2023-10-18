@@ -1,8 +1,8 @@
 # Academia - Course Registration Portal
 
 ## Author
-- **Name:** Vicky Panchal
-- **Roll No:** MT2023098
+- **Name:** Swarnim Kukreti
+- **Roll No:** MT2023029
 
 ## International Institute of Information Technology, Bangalore
 - **Course:** CS-513 System Software
