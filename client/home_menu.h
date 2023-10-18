@@ -1,13 +1,13 @@
 /*
 Author: 	Swarnim
 Roll No.: 	MT2023029
-Date: 		15/10/2023
+Date: 		18/10/2023
 */
 
+#include "../database/database.h"
 #include "admin_menu.h"
 #include "student_menu.h"
 #include "faculty_menu.h"
-
 #include "../macros.h"
 
 int homeMenu(int opt,int  sock){//used in client.c
@@ -24,7 +24,7 @@ int homeMenu(int opt,int  sock){//used in client.c
 		int valid_login;
 		int role;
 		read(sock, &valid_login, sizeof(valid_login));
-		printf("valid login is: %d\n", valid_login);
+		
 		if(valid_login == 1){
 			read(sock, &role, sizeof(role));
 			switch(role) {
@@ -49,6 +49,7 @@ int homeMenu(int opt,int  sock){//used in client.c
 			return 1;
 		}
 	}
-	else
-		return 3;
+	else {
+		return 4;
+	}
 }
